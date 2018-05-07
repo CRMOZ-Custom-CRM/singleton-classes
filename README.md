@@ -5,9 +5,9 @@
 "repositories": [
      {
        "type": "git",
-       "url": "git@bitbucket.org:genioteamerp/sender-module.git"
+       "url": "git@bitbucket.org:genioteamerp/singleton-classes.git"
      }
 ]
 ```
 Установить пакет с помощью Composer:
-```composer require crmoz/sender-module:dev-master```
+```composer require crmoz/singleton-classes:dev-master```
