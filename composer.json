@@ -1,0 +1,26 @@
+{
+  "name": "crmoz/singleton-classes",
+  "description": "Classes for use Singleton pattern",
+  "keywords": [
+    "api"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dinisimys"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SenderModule\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "illuminate/support": "5.5.x"
+
+
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
