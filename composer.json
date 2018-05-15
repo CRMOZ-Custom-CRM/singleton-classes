@@ -16,8 +16,7 @@
     }
   },
   "require": {
-    "php": ">=7.0.0",
-    "illuminate/support": "5.4.x"
+    "php": ">=7.0.0"
 
 
   },
