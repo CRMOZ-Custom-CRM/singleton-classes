@@ -4,6 +4,7 @@ namespace SingletonClasses;
 
 class SoapSingleton
 {
+    const DEFAULT_CONNECTION_TIMEOUT = 30;
 
     public $soapClient = null;
 
@@ -23,10 +24,10 @@ class SoapSingleton
 
     private function __construct() {}
 
-    public function getSoapClient($wsdl)
+    public function getSoapClient($wsdl, $connectionTimeout = self::DEFAULT_CONNECTION_TIMEOUT)
     {
         if($this->soapClient === null) {
-            $this->soapClient = new \SoapClient($wsdl);
+            $this->soapClient = new \SoapClient($wsdl, ['connection_timeout' => $connectionTimeout]);
         }
         return $this->soapClient;
     }
